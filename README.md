@@ -10,7 +10,12 @@ There are multiple approaches to viewing this project.
 - Looking for extractable parameters within the signal data and exploring their attributes
 
 DATA SOURCE: https://archive.ics.uci.edu/ml/datasets/EMG+data+for+gestures
-Structure of data: 36 participants, 2 sessions each, 6 gestures, 2 gesture periods for each gesture in a session
+Structure of data: 36 participants, 2 sessions each, 6 gestures, 2 gesture periods for each gesture in a session\
+\
+Settled Features after testing:\
+sampling window: ~100ms\
+pseudo-magnitude: Maxval-Minval per channel (most accuracy found here)\
+Frequency: Estimation using Welch Power Spectral Density\
 
 Some Gestures\
 ![](imgs/partial_gestures.png)\
