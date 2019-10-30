@@ -51,4 +51,4 @@ Example of raw participant-participant deviations\
 ![](imgs/rawhand2p.png)\
 
 Example Residuals of participant-particiapnt deviatons of magnitude feature\
-1[](imgs/magres2p.png)\
+![](imgs/magres2p.png)\
