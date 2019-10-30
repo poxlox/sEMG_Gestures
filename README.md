@@ -25,7 +25,7 @@ Performance with different withheld participants:\
 ![](imgs/withheldpartperf.png)
 
 Here are the most common model errors\
-( 1: 'hand at rest',\
+KEY: ( 1: 'hand at rest',\
  2: 'hand clenched in a fist',\
  3: 'wrist flexion',\
  4: 'wrist extension',\
