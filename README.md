@@ -1,7 +1,9 @@
 # sEMG_Gestures
 
-## Gestures
+### MYO Thalmic Bracelet
 ![](imgs/bracelet.png)
+
+### Intro
 
 There are multiple approaches to viewing this project.
 
@@ -11,18 +13,18 @@ There are multiple approaches to viewing this project.
 
 DATA SOURCE: https://archive.ics.uci.edu/ml/datasets/EMG+data+for+gestures \
 Structure of data: 36 participants, 2 sessions each, 6 gestures, 2 gesture periods for each gesture in a session\
-\
+
 Settled Features after testing:\
-sampling window: ~100ms\
-pseudo-magnitude: Maxval-Minval per channel (most accuracy found here)\
-Frequency: Estimation using Welch Power Spectral Density
+- sampling window: ~100ms\
+- pseudo-magnitude: Maxval-Minval per channel (most accuracy found here)\
+- Frequency: Estimation using Welch Power Spectral Density
 
 Some Gestures\
 ![](imgs/partial_gestures.png)
 
 Best Tested Models:\
-RandomForestClassifier\
-ANN
+- RandomForestClassifier
+- ANN (Exported as model.h5)
 
 Different users with particular features (e.g. bodyfat%) result in various perfomance results\
 when using a universal model. Two Participants had significant underperformance\
