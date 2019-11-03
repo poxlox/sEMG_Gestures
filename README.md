@@ -9,7 +9,7 @@ There are multiple approaches to viewing this project.
 - Testing the viability of a training period prior to each user's personal use
 - Looking for extractable parameters within the signal data and exploring their attributes
 
-DATA SOURCE: https://archive.ics.uci.edu/ml/datasets/EMG+data+for+gestures
+DATA SOURCE: https://archive.ics.uci.edu/ml/datasets/EMG+data+for+gestures \
 Structure of data: 36 participants, 2 sessions each, 6 gestures, 2 gesture periods for each gesture in a session\
 \
 Settled Features after testing:\
