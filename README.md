@@ -1,7 +1,7 @@
 # sEMG_Gestures
 
 ## Gestures
-![](imgs/bracelet.png)\
+![](imgs/bracelet.png)
 
 There are multiple approaches to viewing this project.
 
@@ -15,14 +15,14 @@ Structure of data: 36 participants, 2 sessions each, 6 gestures, 2 gesture perio
 Settled Features after testing:\
 sampling window: ~100ms\
 pseudo-magnitude: Maxval-Minval per channel (most accuracy found here)\
-Frequency: Estimation using Welch Power Spectral Density\
+Frequency: Estimation using Welch Power Spectral Density
 
 Some Gestures\
-![](imgs/partial_gestures.png)\
+![](imgs/partial_gestures.png)
 
 Best Tested Models:\
 RandomForestClassifier\
-ANN\
+ANN
 
 Different users with particular features (e.g. bodyfat%) result in various perfomance results\
 when using a universal model. Two Participants had significant underperformance\
@@ -53,7 +53,7 @@ Showing example raw overlayed gestures 1 participant\
 ![](imgs/fist+wf1p.png)\
 
 Example of raw participant-participant deviations\
-![](imgs/rawhand2p.png)\
+![](imgs/rawhand2p.png)
 
 Example Residuals of participant-particiapnt deviatons of magnitude feature\
-![](imgs/magres2p.png)\
+![](imgs/magres2p.png)
