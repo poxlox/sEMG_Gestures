@@ -16,9 +16,9 @@ There are multiple approaches to viewing this project.
 DATA SOURCE: https://archive.ics.uci.edu/ml/datasets/EMG+data+for+gestures \
 Structure of data: 36 participants, 2 sessions each, 6 gestures, 2 gesture periods for each gesture in a session\
 
-Settled Features after testing:\
-- sampling window: ~100ms\
-- pseudo-magnitude: Maxval-Minval per channel (most accuracy found here)\
+Settled Features after testing:
+- sampling window: ~100ms
+- pseudo-magnitude: Maxval-Minval per channel (most accuracy found here)
 - Frequency: Estimation using Welch Power Spectral Density
 
 Some Gestures\
