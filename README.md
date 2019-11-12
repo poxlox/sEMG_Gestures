@@ -1,4 +1,6 @@
 # sEMG_Gestures
+### Background
+The MYO Thalmic Bracelet is a wearable technology that measures the electrical impulses of forearm muscles. It has 8 channels, each producing signal data associated with a different area of the arm. There are a few potential uses of this kind of bracelet. It may be used for robotic prosthetics, sending commands to a computer, or for virtual reality training or videogames.
 
 ### MYO Thalmic Bracelet
 ![](imgs/bracelet.png)
