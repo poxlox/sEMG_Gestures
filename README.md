@@ -24,7 +24,7 @@ Settled Features after testing:
 Some Gestures\
 ![](imgs/partial_gestures.png)
 
-Best Tested Models:\
+Best Tested Models:
 - RandomForestClassifier
 - ANN (Exported as model.h5)
 
