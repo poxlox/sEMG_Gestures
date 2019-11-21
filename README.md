@@ -22,7 +22,7 @@ Settled Features after testing:
 - Frequency: Estimation using Welch Power Spectral Density
 
 Gesture chart\
-![](revised_hand_chart.png)
+![](imgs/revised_hand_chart.png)
 
 Best Tested Models:
 - RandomForestClassifier
