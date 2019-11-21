@@ -21,8 +21,8 @@ Settled Features after testing:
 - pseudo-magnitude: Maxval-Minval per channel (most accuracy found here)
 - Frequency: Estimation using Welch Power Spectral Density
 
-Some Gestures\
-![](imgs/partial_gestures.png)
+Gesture chart\
+![](revised_hand_chart.png)
 
 Best Tested Models:
 - RandomForestClassifier
