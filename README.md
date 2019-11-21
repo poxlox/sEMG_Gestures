@@ -29,7 +29,10 @@ Best Tested Models:
 - ANN (Exported as model.h5)
 
 Different users with particular features (e.g. bodyfat%) result in various perfomance results\
-when using a universal model. Two Participants had significant underperformance\
+when using a universal model. Two Participants had significant underperformance. In a follow-up research article, the researchers found that these latent features, particularly bodyfat%, had these affects. To continue to develop a better model, an additional protocol to determine bodyfat percentage of the user prior to device use is recommended. A dataset with annotated bodyfat levels should train the model, given the assumption that similar participants produce similar signal data (I believe this is reasonable).
+
+
+
 Performance with different withheld participants:\
 ![](imgs/withheldpartperf.png)
 
@@ -41,6 +44,11 @@ KEY: ( 1: 'hand at rest',\
  5: 'radial deviations',\
  6: 'ulnar deviations')\
 ![](imgs/commonerrors.png)
+The two top errors stand out as the most "confusing" for the model. The model frequently predicts an ulnar deviation when the user is performing a wrist flexion, and similarly predicts a radial deviation when the user is performing a wrist extension.  
+I believe this is explainable by some converging used muscles. I hypothesize the main ones to be the Brachioradialis during the wrist flexion and ulnar deviation confusion and the extensor pollicis, but other additional muscles may be involved for each.
+
+
+
 
 
 Showing example raw data 1 participant\
