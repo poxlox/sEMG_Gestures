@@ -43,12 +43,14 @@ Performance with different withheld participants:\
 ![](imgs/withheldpartperf.png)
 
 Here are the most common model errors\
-KEY: ( 1: 'hand at rest',\
+KEY:  
+ 1: 'hand at rest',\
  2: 'hand clenched in a fist',\
  3: 'wrist flexion',\
  4: 'wrist extension',\
  5: 'radial deviations',\
  6: 'ulnar deviations')\
+ 
 ![](imgs/commonerrors.png)  
      The two top errors stand out as the most "confusing" for the model. The model frequently predicts an ulnar deviation when the user is performing a wrist flexion, and similarly predicts a radial deviation when the user is performing a wrist extension.  
      I believe this is explainable by some converging used muscles. I hypothesize the main ones to be the Brachioradialis during the wrist flexion and ulnar deviation confusion and the extensor pollicis, but other additional muscles may be involved for each.
