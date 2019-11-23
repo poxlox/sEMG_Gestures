@@ -9,14 +9,20 @@ The MYO Thalmic Bracelet is a wearable technology that measures the electrical i
 
 There are multiple approaches to viewing this project.
 
-- Examining the efficacy of a universal model of human gesture data per this bracelet. 
+- Examining the efficacy of a universal model of human gesture data per this bracelet
 - Testing the viability of a training period prior to each user's personal use
 - Looking for extractable parameters within the signal data and exploring their attributes
 
 DATA SOURCE: https://archive.ics.uci.edu/ml/datasets/EMG+data+for+gestures \
 Structure of data: 36 participants, 2 sessions each, 6 gestures, 2 gesture periods for each gesture in a session\
 
-#### Settled Features after testing:
+## Sections
+1 - Settled Features after testing7
+2 - Best Tested Models
+3 - Raw data section
+4 - Feature Integrity section
+
+#### (1) Settled Features after testing:
 - sampling window: ~100ms
 - pseudo-magnitude: Maxval-Minval per channel (most accuracy found here)
 - Frequency: Estimation using Welch Power Spectral Density
@@ -24,7 +30,7 @@ Structure of data: 36 participants, 2 sessions each, 6 gestures, 2 gesture perio
 Gesture chart\
 ![](imgs/revised_hand_chart.png)
 
-#### Best Tested Models:
+#### (2) Best Tested Models:
 1 RandomForestClassifier (top performing)
 2 ANN (Exported as model.h5)
 
@@ -43,14 +49,14 @@ KEY: ( 1: 'hand at rest',\
  4: 'wrist extension',\
  5: 'radial deviations',\
  6: 'ulnar deviations')\
-![](imgs/commonerrors.png)
-The two top errors stand out as the most "confusing" for the model. The model frequently predicts an ulnar deviation when the user is performing a wrist flexion, and similarly predicts a radial deviation when the user is performing a wrist extension.  
-I believe this is explainable by some converging used muscles. I hypothesize the main ones to be the Brachioradialis during the wrist flexion and ulnar deviation confusion and the extensor pollicis, but other additional muscles may be involved for each.
+![](imgs/commonerrors.png)  
+     The two top errors stand out as the most "confusing" for the model. The model frequently predicts an ulnar deviation when the user is performing a wrist flexion, and similarly predicts a radial deviation when the user is performing a wrist extension.  
+     I believe this is explainable by some converging used muscles. I hypothesize the main ones to be the Brachioradialis during the wrist flexion and ulnar deviation confusion and the extensor pollicis, but other additional muscles may be involved for each.
   
 
 
-#### Raw data section:
-Showing example raw data 1 participant\
+#### (3) Raw data section:
+Showing example raw data 1 participant:\
 ![](imgs/rd1p.png)\
 ![](imgs/ud1p.png)\
 ![](imgs/we1p.png)\
@@ -63,7 +69,7 @@ Showing example raw overlayed gestures 1 participant:\
 ![](imgs/har+we1p.png)\
 ![](imgs/fist+wf1p.png)\
 
-#### Feature Integrity section:
+#### (4) Feature Integrity section:
 
 Example of raw participant-participant deviations:\
 ![](imgs/rawhand2p.png)
