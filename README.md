@@ -16,7 +16,7 @@ There are multiple approaches to viewing this project.
 DATA SOURCE: https://archive.ics.uci.edu/ml/datasets/EMG+data+for+gestures \
 Structure of data: 36 participants, 2 sessions each, 6 gestures, 2 gesture periods for each gesture in a session\
 
-Settled Features after testing:
+####Settled Features after testing:
 - sampling window: ~100ms
 - pseudo-magnitude: Maxval-Minval per channel (most accuracy found here)
 - Frequency: Estimation using Welch Power Spectral Density
@@ -24,9 +24,9 @@ Settled Features after testing:
 Gesture chart\
 ![](imgs/revised_hand_chart.png)
 
-Best Tested Models:
-- RandomForestClassifier
-- ANN (Exported as model.h5)
+####Best Tested Models:
+1 RandomForestClassifier (top performing)
+2 ANN (Exported as model.h5)
 
 Different users with particular features (e.g. bodyfat%) result in various perfomance results\
 when using a universal model. Two Participants had significant underperformance. In a follow-up research article, the researchers found that these latent features, particularly bodyfat%, had these affects. To continue to develop a better model, an additional protocol to determine bodyfat percentage of the user prior to device use is recommended. A dataset with annotated bodyfat levels should train the model, given the assumption that similar participants produce similar signal data (I believe this is reasonable).
@@ -49,8 +49,7 @@ I believe this is explainable by some converging used muscles. I hypothesize the
 
 
 
-
-
+####Raw data section:
 Showing example raw data 1 participant\
 ![](imgs/rd1p.png)\
 ![](imgs/ud1p.png)\
@@ -59,13 +58,15 @@ Showing example raw data 1 participant\
 ![](imgs/hcif1p.png)\
 ![](imgs/har1p.png)\
 \
-Showing example raw overlayed gestures 1 participant\
+Showing example raw overlayed gestures 1 participant:\
 ![](imgs/rdev+udev1p.png)\
 ![](imgs/har+we1p.png)\
 ![](imgs/fist+wf1p.png)\
 
-Example of raw participant-participant deviations\
+####Feature Integrity section:
+
+Example of raw participant-participant deviations:\
 ![](imgs/rawhand2p.png)
 
-Example Residuals of participant-particiapnt deviatons of magnitude feature\
+Example The input feature "pseudo-magnitude"'s residual error between two different participants:\
 ![](imgs/magres2p.png)
