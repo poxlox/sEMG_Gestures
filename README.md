@@ -17,10 +17,10 @@ DATA SOURCE: https://archive.ics.uci.edu/ml/datasets/EMG+data+for+gestures \
 Structure of data: 36 participants, 2 sessions each, 6 gestures, 2 gesture periods for each gesture in a session\
 
 ## Sections
-1 - Settled Features after testing7
-2 - Best Tested Models
-3 - Raw data section
-4 - Feature Integrity section
+1 - Settled Features after testing  
+2 - Best Tested Models  
+3 - Raw data section  
+4 - Feature Integrity section  
 
 #### (1) Settled Features after testing:
 - sampling window: ~100ms
